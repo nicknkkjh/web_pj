@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>김지훈의 홈페이지</title>
+    
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+   
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">KJH</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#youtube">youtube</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#insta">insta</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#face book">face book</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#kakaotalk">kakaotalk</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#E-mail">E-mail</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav>
+
+    
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">안녕하세요!</span>
+                <span class="down">김지훈 입니다.</span>
+            </h1>
+            <p class="header-subtitle">Talented university student</p>            
+
+            <button class="btn btn-primary">나의 SNS방문</button>
+        </div>   
+                   
+    </header>
+    <h1 class="clock"></h1>
+</div>
+
+<script>
+  function updateClock() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var timeString = hours + ':' + formatDigits(minutes) + ':' + formatDigits(seconds);
+
+    document.querySelector('.clock').textContent = timeString;
+
+    setTimeout(updateClock, 1000); // 1초마다 업데이트
+  }
+
+  function formatDigits(value) {
+    return value < 10 ? '0' + value : value;
+  }
+
+  updateClock(); // 초기 시계 업데이트
+
+</script>
+    
+    <section class="section pt-0" id="about">
+        
+        <div class="container text-center">
+            
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="./img/KakaoTalk_20230330_100510219.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">난누굴까 ?</p>
+                    <h2 class="section-title mb-3">나로 말하자면</h2>
+                    <p>
+                         01년 6월 29일생으로 매우 평범한 가정에서 태어나 건강하게 너무건강 해서 탈이지만 잘성장중이라고생각 한다. 현재나의 위치는 평범 밑에 단계일까나
+                        <br>자존감이 없어보일수있으나 자기 객관화가 잘된거라고 생각한다. 부모가 홀수여서 동정할수도있지만 두분계신 가정집보단 더욱 사랑을 받고 자랐다.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4">내 인생 최고의 플레이</button>
+                
+	
+	
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+</html>
